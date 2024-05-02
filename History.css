@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+}
+.nav-bar .title{
+    color: wheat;
+    font-size: 67px;
+    font-weight: 600;
+    cursor: pointer;
+}
+span{
+    color: crimson;
+}
+.nav-bar p{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 40px;
+    color: wheat;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: 0.5s ease;
+}
+.menu li a:hover{
+    color: grey;
+    padding: 5px 10px;
+}
+.title h1{
+    color: wheat;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 42px;
+}
+.title h1::after{
+    content: "";
+    height: 4px;
+    width: 310px;;
+    background-color: crimson;
+    display: block;
+    margin: auto;
+}
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    position: relative;
+    width: 90%;
+    margin: 0px 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card .icon{
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: White;
+}
+.card h2{
+    font-size: 28px;
+    color: chocolate;
+    margin-bottom: 20px;
+}
+.card p{
+    margin: 0;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #fff;
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c677c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.button:hover{
+    background-color: #c94f4f;
+    transition: 0.4s;
+}
+@media screen and (max-width: 940px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 85px;
+        display: flex;
+        margin: 20px 0px;
+    }
+} 
